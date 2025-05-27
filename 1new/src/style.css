@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fffbe6;
+  text-align: center;
+  padding: 2rem;
+}
+button {
+  background: #ff4081;
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #f50057;
+}
+.deal {
+  background-color: #ffe082;
+  border: 2px dashed #ff7043;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
