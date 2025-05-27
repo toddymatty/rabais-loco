@@ -9,7 +9,18 @@ function App() {
     <div className="app">
       <h1>🎉 Bienvenue chez Rabais Loco! 🎉</h1>
       {!showDeals ? (
-        <button onClick={() => setShowDeals(true)}>🎊 Clique sur la piñata! 🎊</button>
+        <img
+          src="/pinata.png"
+          alt="Clique sur la piñata!"
+          onClick={() => setShowDeals(true)}
+          style={{
+            width: '250px',
+            cursor: 'pointer',
+            transition: 'transform 0.3s',
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.transform = 'scale(1.1)')}
+          onMouseOut={(e) => (e.currentTarget.style.transform = 'scale(1)')}
+        />
       ) : (
         <div className="deals">
           {[1, 2, 3].map(num => (
